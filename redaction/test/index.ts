@@ -1,4 +1,4 @@
-import {redact} from './redact_src/redact';
+import {redact} from './src/redact';
 
 let cv = `
 Yasser won the best actress award in 2013.

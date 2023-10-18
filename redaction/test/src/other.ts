@@ -33,8 +33,12 @@ export function redactOther(text: string, fullName: string): string {
 	};
 
 //	Name
-	doc.match(fullName).forEach((match) => {
-		match.replace('Candidate');
+	let names:string[] = fullName.split(" ");
+	
+	names.forEach(name => {
+		doc.match(name).forEach((match) => {
+			match.replace('Candidate');
+		});
 	});
 
 // Location
